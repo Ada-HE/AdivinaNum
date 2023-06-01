@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Num</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./Num.js"></script>
+</head>
+<body>
+    <h2>Escoge un numero y ....</h2>
+    <button onclick="alert('Hola acabas de presionarme, ¿Listo para comenzar?')">Hola juguemos</button>
+    <input type="button" value="Genera el numero" onclick="adivinarNumero()"/>
+    <input type="button" value="¿Cuál crees que es?" onclick="ingresaNum()"/>
+    <input type="button" value="Veamos si es la correcta" onclick="Respuesta()" id="btnclic">
+    <p id="contador">0</p>
+    <script>
+        var contador = 0
+        var btnclic = document.getElementById("btnclic");
+        var contadorelementos = document.getElementById("contador");
+        
+        btnclic.addEventListener("click", function() {
+            contador++;
+            contadorelementos.innerHTML = contador;
+        })
+    </script>
+     <input type="button" value="ver el numero" onclick=" ver()">
+</body>
+</html>
